@@ -1,10 +1,11 @@
-
+import React from 'react';
+import { Layout, Landing } from '../Pages';
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <Layout className="App">
+      <Landing />
+    </Layout>
   );
 }
 

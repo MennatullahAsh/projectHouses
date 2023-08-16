@@ -7,6 +7,7 @@ const Landing = () => {
 
     return <>
         {/* <p> welcome to landing page</p> */}
+        
     </>
 }
 

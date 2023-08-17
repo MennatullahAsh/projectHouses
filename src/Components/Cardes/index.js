@@ -9,21 +9,23 @@ import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 
-import house from '../Utilis/images/house.png';
 
-export default function HouseCard() {
+
+export default function HouseCard({house}) {
     const [liked, setLiked] = React.useState(false);
+
+    const { address } = house;
 
     const handleLikeToggle = () => {
         setLiked(!liked);
     };
 
     return (
-         
+
 
         <Card sx={{ maxWidth: 345 }} style={{ padding: '20px 40px' }}>
             <Typography gutterBottom variant="h4" component="div">
-        Best Houses
+                Best Houses
             </Typography>
 
 
@@ -44,13 +46,13 @@ export default function HouseCard() {
                         top: '13px',
                         right: '17px',
                         zIndex: 1,
-                        fontSize:'30px'
+                        fontSize: '30px'
                     }}
                     onClick={handleLikeToggle}
                 />
                 <CardContent>
                     <Typography gutterBottom variant="p" component="div">
-                        Vila
+                       {address}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                         Lizards are a widespread group of squamate reptiles, with over 6,000

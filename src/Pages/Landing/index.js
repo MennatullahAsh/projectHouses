@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Cards from '../../Components/Cardes'
 import CardContainer from '../../Components/CardContainer';
-// import { get } from '../../api'; 
+import Typography from '@mui/material/Typography';
+
+
 
 const Landing = () => {
 
@@ -15,6 +17,14 @@ const Landing = () => {
 
     return (
         <>
+            <Typography variant="h4" align="center" gutterBottom style={
+                {paddingTop:'30px',
+                fontWeight:'bold'
+            }
+            }>
+                Best Seller House
+            </Typography>
+
 {console.log(data, 'houses')}
         <CardContainer houses={data}/>
        

@@ -1,14 +1,14 @@
 import React from 'react';
-import {NavBar} from '../../Components'
-import {Cards} from '../../Components'
+import {NavBar,Footer,Hero} from '../../Components'
+// import {Cards} from '../../Components'
+
 
 const Layout = ({ children }) => {
     return <>
         <NavBar/>
+        <Hero />
         {children}
-        <NavBar />
-
-        {/* <Footer /> */}
+        <Footer />
     </>
 }
 

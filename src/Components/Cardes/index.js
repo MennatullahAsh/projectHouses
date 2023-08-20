@@ -9,7 +9,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import HotelIcon from '@mui/icons-material/Hotel';
 import LocalHotelIcon from '@mui/icons-material/LocalHotel';
 import BathtubIcon from '@mui/icons-material/Bathtub';
-
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 
 import style from './style.css'
 
@@ -32,15 +32,10 @@ export default function HouseCard({ house }) {
 
     return (
 
-
-        // <Typography gutterBottom variant="h4" component="div">
-        //     Best Houses
-        // </Typography> 
-
         <div className="card"
         >
             <Card sx={{ maxWidth: 340, }} className='imgCard'
-                style={{ marginTop: '30px', }}>
+                style={{ marginTop: '20px', }}>
 
                 <CardActionArea  >
                     <CardMedia
@@ -50,7 +45,7 @@ export default function HouseCard({ house }) {
                         image={url}
                         alt="green iguana"
                     />
-                    <FavoriteIcon 
+                    <FavoriteIcon
                         sx={{
                             color: liked ? 'red' : 'white',
                             // border: '1px solid red', 
@@ -73,15 +68,33 @@ export default function HouseCard({ house }) {
                         </Typography>
 
                         <Typography className='icon'
-                         style={{ 
-                            display: 'flex',
-                             alignItems: 'center' 
-                             }}>
-                            <LocalHotelIcon style={{ padding: "3px 10px 0 0",
-                        fontSize:'28px', }} />
-                             {bedroom}
-                            <BathtubIcon style={{ padding: "3px 10px 0 11px" }} />
-                             {bathroom}
+                            style={{
+                                display: 'flex',
+                                alignItems: 'center'
+                            }}>
+                            <LocalHotelIcon style={{
+                                padding: "3px 10px 0 0",
+                                fontSize: '28px',
+                            }} />
+                            {bedroom}
+                            <BathtubIcon style={{
+                                padding: "0px 10px 0 11px",
+                            }} />
+
+                            <span>{bathroom}</span>
+
+                            <span style={{
+                                paddingLeft: '130px',
+                                fontWeight: 'bolder',
+                                fontSize: '18px'
+                            }}>{price}
+                            </span>
+                            <AttachMoneyIcon style={{
+                                padding: "0px 0px 0px 2px",
+                                color: 'red'
+                            }} />
+
+
                         </Typography>
 
 

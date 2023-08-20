@@ -16,15 +16,12 @@
 //         ))}
 //       </Grid>
 
-
-
 //     </>
 //   );
 // }
 // export default CardContainer
 
 import HouseCard from "../Cardes";
-import api from '../../Pages/Landing';
 import { Grid } from "@mui/material";
 
 const CardContainer = ({ houses }) => {

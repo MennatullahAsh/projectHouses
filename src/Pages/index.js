@@ -1,5 +1,8 @@
 import Layout from "./Layout";
-import Landing from './Landing'
+import Landing from './Landing';
+import Details from "./Details";
 
 
-export {Layout, Landing }
+
+
+export {Layout, Landing, Details }

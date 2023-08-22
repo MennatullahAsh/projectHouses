@@ -32,8 +32,6 @@ function Hero() {
                             position: 'absolute',
                             right: '190',
                             bottom:'10',
-
-
                         }} />
                     </Box>
                 </div>

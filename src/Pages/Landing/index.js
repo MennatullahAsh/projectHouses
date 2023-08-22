@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Cards from '../../Components/Cardes'
 import CardContainer from '../../Components/CardContainer';
 import Typography from '@mui/material/Typography';
+import { Hero } from '../../Components';
 
 
 
@@ -17,27 +17,23 @@ const Landing = () => {
 
     return (
         <>
+                <Hero/>
             <Typography variant="h4" align="center" gutterBottom style={
-                {paddingTop:'30px',
-                fontWeight:'bold'
-            }
+                {
+                    paddingTop: '30px',
+                    fontWeight: 'bold'
+                }
             }>
                 Best Seller House
             </Typography>
 
-{console.log(data, 'houses')}
-        <CardContainer houses={data}/>
-       
+            {console.log(data, 'houses')}
+            <CardContainer houses={data} />
+
         </>
+
     );
 }
 
 
 export default Landing;
-
-
-
-
-
-
-

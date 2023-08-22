@@ -1,12 +1,11 @@
 import React from 'react';
 import {NavBar,Footer,Hero} from '../../Components'
-// import {Cards} from '../../Components'
 
 
 const Layout = ({ children }) => {
     return <>
         <NavBar/>
-        <Hero />
+        {/* <Hero /> */}
         {children}
         <Footer />
     </>

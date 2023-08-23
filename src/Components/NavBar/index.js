@@ -12,11 +12,11 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import { Link } from 'react-router-dom';
 
 import logo from '../Utilis/images/logo.png';
 import style from './style.css';
 
-const pages = ['Home', 'About Us'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
@@ -44,69 +44,32 @@ function ResponsiveAppBar() {
         }}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-
                     <img className='logo'
                         src={logo}
-
                         alt=""
                         sx={{
                             display: { xs: 'none', md: 'flex' },
                             mr: 2,
                         }}
                     />
-                    <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-                        <IconButton
-                            size="large"
-                            aria-label="account of current user"
-                            aria-controls="menu-appbar"
-                            aria-haspopup="true"
-                            onClick={handleOpenNavMenu}
-                            color="inherit"
-                        >
-                            <MenuIcon />
-                        </IconButton>
-                        <Menu
-                            id="menu-appbar"
-                            anchorEl={anchorElNav}
-                            anchorOrigin={{
-                                vertical: 'bottom',
-                                horizontal: 'left',
-                            }}
-                            keepMounted
-                            transformOrigin={{
-                                vertical: 'top',
-                                horizontal: 'left',
-                            }}
-                            open={Boolean(anchorElNav)}
-                            onClose={handleCloseNavMenu}
-                            sx={{
-                                display: { xs: 'block', md: 'none' },
-                            }}
-                        >
-                            {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center" >{page}</Typography>
-                                </MenuItem>
-                            ))}
-                        </Menu>
-                    </Box>
 
+                    <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center', fontSize: '360' }}>
 
-                    <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center' , fontSize:'360'}}>
-                        {pages.map((page) => (
-                            <Button style={{
-                                color: 'black',
-                                 fontSize: '20px',
-                                 fontWeight:'bold',
-                                 marginLeft:'20px'
-                            }}
-                                key={page}
-                                onClick={handleCloseNavMenu}
-                                sx={{ my: 2, display: 'block' }}
-                            >
-                                {page}
-                            </Button>
-                        ))}
+                        <Button > <Link to='/' style={{
+                            color: 'black',
+                            fontSize: '20px',
+                            fontWeight: 'bold',
+                            marginLeft: '20px',
+                            textDecoration: 'none',
+                        }}> Home</Link></Button>
+                        <Button> <Link to='/About' style={{
+                            color: 'black',
+                            fontSize: '20px',
+                            fontWeight: 'bold',
+                            marginLeft: '20px',
+                            textDecoration: 'none',
+                        }} >About Us</Link></Button>
+                        
 
                     </Box>
 
@@ -115,7 +78,7 @@ function ResponsiveAppBar() {
                         <Button className='btn1'
                             style={{
                                 color: 'black',
-                                backgroundColor:'#EE8400',
+                                backgroundColor: '#EE8400',
                                 marginRight: '20px',
                                 width: '90px',
                                 fontWeight: 'bold',
@@ -127,10 +90,10 @@ function ResponsiveAppBar() {
                             variant="contained"
                             style={{
                                 border: '1px solid #EE8400 ',
-                                backgroundColor:'#fff',
-                                width:'90px',
+                                backgroundColor: '#fff',
+                                width: '90px',
                                 fontWeight: 'bold',
-                                color:'black',
+                                color: 'black',
                                 marginRight: '40px'
                             }}
                         >

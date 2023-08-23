@@ -9,6 +9,7 @@ import HotelIcon from '@mui/icons-material/Hotel';
 import LocalHotelIcon from '@mui/icons-material/LocalHotel';
 import BathtubIcon from '@mui/icons-material/Bathtub';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+
 import { Link } from 'react-router-dom';
 
 import style from './style.css'
@@ -17,14 +18,7 @@ import style from './style.css'
 export default function HouseCard({ house }) {
     const [liked, setLiked] = React.useState(false);
 
-    const { id } = house;
-    const { url } = house;
-    const { address } = house;
-    const { price } = house;
-    const { description } = house;
-    const { bedroom } = house;
-    const { bathroom } = house;
-    const { type } = house;
+    const {id,url,address,price,description,bedroom,bathroom,type}=house;
 
     const handleLikeToggle = () => {
         setLiked(!liked);
@@ -60,7 +54,7 @@ export default function HouseCard({ house }) {
                             {address}
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            {description}
+                            { description.split("").splice(0,115).join("") }
 
                         </Typography>
 
@@ -94,7 +88,7 @@ export default function HouseCard({ house }) {
                     </CardContent>
                 </CardActionArea>
                 <CardActions className='cardActions'>
-                    <Link to={`/details/${house.id}`}
+                    <Link to={`/Details/${id}`}
                         size="small"
                         color="primary"
                         style={{

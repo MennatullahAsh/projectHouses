@@ -1,0 +1,11 @@
+.title{
+    color: #001D58;
+}
+.contact{
+    padding: 20px 100px;
+    line-height: 50px;
+    margin-top: 20px;
+}
+.contact p{
+    font-weight: bold;
+}

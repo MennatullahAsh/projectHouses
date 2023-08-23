@@ -1,0 +1,20 @@
+.about {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    font-family: Istok Web;
+}
+.about img {
+    height: 600px;
+    width:  800px;
+    margin-top: -70px;
+}
+.about p {
+    text-align: justify ! important;
+    font-size: 18px;
+    padding: 0 10px 20px 10px;
+}
+.title{
+    color: #EE8400;
+    font-size: 50px;
+}

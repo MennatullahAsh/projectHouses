@@ -62,6 +62,7 @@ function ResponsiveAppBar() {
                             marginLeft: '20px',
                             textDecoration: 'none',
                         }}> Home</Link></Button>
+
                         <Button> <Link to='/About' style={{
                             color: 'black',
                             fontSize: '20px',
@@ -69,36 +70,32 @@ function ResponsiveAppBar() {
                             marginLeft: '20px',
                             textDecoration: 'none',
                         }} >About Us</Link></Button>
-                        
+
 
                     </Box>
 
 
                     <Box sx={{ display: 'flex', alignItems: 'center' }} >
-                        <Button className='btn1'
-                            style={{
+                        <Button className='btn1'>
+                            <Link to='/SignIn' style={{
                                 color: 'black',
                                 backgroundColor: '#EE8400',
                                 marginRight: '20px',
                                 width: '90px',
                                 fontWeight: 'bold',
-                            }}
-                        >
-                            Sign In
-                        </Button>
-                        <Button
-                            variant="contained"
-                            style={{
+                            }} >  Sign In</Link></Button>
+
+                        <Button variant="contained">
+                            <Link to='/SignUp' style={{
                                 border: '1px solid #EE8400 ',
                                 backgroundColor: '#fff',
                                 width: '90px',
                                 fontWeight: 'bold',
                                 color: 'black',
                                 marginRight: '40px'
-                            }}
-                        >
-                            Sign Up
-                        </Button>
+                            }}>  Sign Up</Link></Button>
+
+                    
                     </Box>
 
                 </Toolbar>

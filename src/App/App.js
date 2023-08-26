@@ -1,7 +1,9 @@
 import React from 'react';
-import { Layout, Landing, Details } from '../Pages';
+import { Layout, Landing, Details, SignIn } from '../Pages';
 import { Route, Routes } from 'react-router-dom';
-import AboutUS from '../Pages/AboutUS'
+import AboutUS from '../Pages/AboutUS';
+import SearchPage from '../Pages/SearchPage';
+// import SignIn from '../Pages/SignIn'
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/Details/:id" element={<Details/>} />
         <Route path="/About" element={<AboutUS/>} />
+        <Route path="/SignIn" element={<SignIn/>} />
+        <Route path="/Search" element={<SearchPage />} />
 
       </Routes>
 

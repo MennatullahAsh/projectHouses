@@ -4,6 +4,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import './style.css';
 
 import hero from '../Utilis/images/hero.png';
+import { Link } from "react-router-dom";
 
 
 function Hero() {
@@ -15,6 +16,7 @@ function Hero() {
 
                 <div className="input-container">
                     <Box sx={{ marginTop: 2 }}>
+                        <Link to='/Search' >
                         <input type="text" placeholder="Search "
                             style={{
                                 width: '500px',
@@ -24,7 +26,7 @@ function Hero() {
                                 position: 'relative',
                                 paddingLeft:'30px'
                             }}
-                        />
+                            />
                         <SearchIcon style={{
                             color: '#EE8400',
                             fontSize:'30px',
@@ -33,6 +35,7 @@ function Hero() {
                             right: '190',
                             bottom:'10',
                         }} />
+                        </Link>
                     </Box>
                 </div>
             </div>

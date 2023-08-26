@@ -11,7 +11,7 @@ import PlaceIcon from '@mui/icons-material/Place';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-import img from"../../Components/Utilis/images/About.png"
+import img from "../../Components/Utilis/images/About.png"
 
 function Details() {
     const { id } = useParams();
@@ -45,30 +45,30 @@ function Details() {
                             height: '400px'
                         }} />
 
-                    <div style={{ display: 'flex', justifyContent: 'space-around',marginRight:'70px'  }}>
-                    <img src={img}
-                     alt="House"
-                        style={{
-                            width: '150px',
-                            height: '150px'
-                        }} />
-                    <img src={img}
-                     alt="House"
-                        style={{
-                            width: '150px',
-                            height: '150px'
-                        }} />
-                    <img src={img}
-                     alt="House"
-                        style={{
-                            width: '150px',
-                            height: '150px'
-                        }} />
-                    
-                        </div>
-                   
+                    <div style={{ display: 'flex', justifyContent: 'space-around', marginRight: '70px' }}>
+                        <img src={img}
+                            alt="House"
+                            style={{
+                                width: '150px',
+                                height: '150px'
+                            }} />
+                        <img src={img}
+                            alt="House"
+                            style={{
+                                width: '150px',
+                                height: '150px'
+                            }} />
+                        <img src={img}
+                            alt="House"
+                            style={{
+                                width: '150px',
+                                height: '150px'
+                            }} />
+
+                    </div>
+
                 </Grid>
-                
+
 
                 <Grid item xs={12} sm={12} md={6} lg={6}>
                     <Typography variant="h4" className="title"
@@ -133,7 +133,8 @@ function Details() {
 
                     <div className='contact' style={{ display: 'flex', flexDirection: 'column' }}>
                         <span style={{
-                            display: 'flex', alignItems: 'center', fontWeight: 'bold'}}>
+                            display: 'flex', alignItems: 'center', fontWeight: 'bold'
+                        }}>
                             <PlaceIcon style={{
                                 marginRight: '20px',
                                 color: '#001D58',

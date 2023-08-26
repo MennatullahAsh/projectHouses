@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Landing, Details, SignIn } from '../Pages';
+import { Layout, Landing, Details, SignIn ,SignUp} from '../Pages';
 import { Route, Routes } from 'react-router-dom';
 import AboutUS from '../Pages/AboutUS';
 import SearchPage from '../Pages/SearchPage';
@@ -14,6 +14,7 @@ function App() {
         <Route path="/Details/:id" element={<Details/>} />
         <Route path="/About" element={<AboutUS/>} />
         <Route path="/SignIn" element={<SignIn/>} />
+        <Route path="/SignUp" element={<SignUp/>} />
         <Route path="/Search" element={<SearchPage />} />
 
       </Routes>

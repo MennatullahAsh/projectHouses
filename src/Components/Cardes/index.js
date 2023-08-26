@@ -12,16 +12,19 @@ import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 
 import { Link } from 'react-router-dom';
 
+
 import style from './style.css'
 
 
-export default function HouseCard({ house }) {
+// export default function HouseCard({ house, onToggleFavorite }) {
+export default function HouseCard({ house,  }) {
     const [liked, setLiked] = React.useState(false);
 
     const {id,url,address,price,description,bedroom,bathroom,type}=house;
 
     const handleLikeToggle = () => {
         setLiked(!liked);
+        // onToggleFavorite(house);
     };
 
     return (

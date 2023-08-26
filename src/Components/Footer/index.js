@@ -13,9 +13,6 @@ const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 function Footer() {
     return (
         <footer className="footer">
-            {/* <div className="logo-container">
-                <img className="logo" src={logo} alt="Logo" />
-            </div> */}
             
             <Typography variant="body2"  align="center" className="copyright">
                 &copy; {new Date().getFullYear()} Mennatullah 2023 house

@@ -3,28 +3,23 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
+import { CardActionArea, CardActions } from '@mui/material';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import HotelIcon from '@mui/icons-material/Hotel';
 import LocalHotelIcon from '@mui/icons-material/LocalHotel';
 import BathtubIcon from '@mui/icons-material/Bathtub';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-
 import { Link } from 'react-router-dom';
-
 
 import style from './style.css'
 
-
 // export default function HouseCard({ house, onToggleFavorite }) {
-export default function HouseCard({ house,  }) {
+export default function HouseCard({ house, }) {
     const [liked, setLiked] = React.useState(false);
 
-    const {id,url,address,price,description,bedroom,bathroom,type}=house;
+    const { id, url, address, price, description, bedroom, bathroom, type } = house;
 
     const handleLikeToggle = () => {
         setLiked(!liked);
-        // onToggleFavorite(house);
     };
 
     return (
@@ -43,7 +38,7 @@ export default function HouseCard({ house,  }) {
                     />
                     <FavoriteIcon
                         sx={{
-                            color: liked ? 'red' : 'white', 
+                            color: liked ? 'red' : 'white',
                             position: 'absolute',
                             top: '13px',
                             right: '17px',
@@ -57,8 +52,7 @@ export default function HouseCard({ house,  }) {
                             {address}
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            { description.split("").splice(0,115).join("") }
-
+                            {description.split("").splice(0, 115).join("")}
                         </Typography>
 
                         <Typography className='icon'

@@ -83,28 +83,12 @@ export default function SelectLabels() {
 
     return (
         <div style={{
-            width: '70%',
-            margin: '30px auto 100px auto',
+            marginBottom: ' 100px ',
         }}>
             <div style={{
                 width: '70%',
                 margin: 'auto', display: 'flex', alignItems: 'center', gap: '120px'
             }}>
-                {/* <Paper
-                    component="form"
-                    sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 400 }}
-                >
-                    <InputBase sx={{ ml: 5, flex: 1 }}
-                        placeholder="Search .."
-                        inputProps={{ 'aria-label': 'search google maps' }}
-                    />
-                    <IconButton type="button" sx={{ p: '10px' }} aria-label="search" style={{
-                        color: '#EE8400',
-                        fontWeight: 'bolder',
-                    }}>
-                        <SearchIcon />
-                    </IconButton>
-                </Paper> */}
                 <Paper
                     component="form"
                     sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 400 }}

@@ -47,9 +47,9 @@ function ResponsiveAppBar() {
 
                     <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center', fontSize: '360' }}>
 
-                        <Button > <Link to='/' style={{
+                        <Button className='btn' > <Link to='/' style={{
                             color: 'black',
-                            fontSize: '20px',
+                            fontSize: '18px',
                             fontWeight: 'bold',
                             marginLeft: '20px',
                             textDecoration: 'none',
@@ -57,12 +57,19 @@ function ResponsiveAppBar() {
 
                         <Button> <Link to='/About' style={{
                             color: 'black',
-                            fontSize: '20px',
+                            fontSize: '18px',
                             fontWeight: 'bold',
                             marginLeft: '20px',
                             textDecoration: 'none',
                         }} >About Us</Link></Button>
 
+                        <Button> <Link to='/Favorites' style={{
+                            color: 'black',
+                            fontSize: '18px',
+                            fontWeight: 'bold',
+                            marginLeft: '20px',
+                            textDecoration: 'none',
+                        }} >My Favorites</Link></Button>
 
                     </Box>
 

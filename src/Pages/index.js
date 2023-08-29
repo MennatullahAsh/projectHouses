@@ -4,9 +4,9 @@ import Details from "./Details";
 import Favorites from "./Favorites";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
-// import Search from "./Search";
+// import Profile from "./Profile";
 
 
 
 
-export { Layout, Landing, Details, Favorites, SignIn, SignUp }
+export { Layout, Landing, Details, Favorites, SignIn, SignUp,  }

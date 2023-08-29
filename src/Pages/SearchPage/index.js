@@ -13,9 +13,11 @@ import SearchIcon from '@mui/icons-material/Search';
 import Button from '@mui/material/Button';
 import CardContainer from "../../Components/CardContainer";
 import { TextField } from '@mui/material';
+import Footer from "../../Components/Footer"
 
 const BootstrapInput = styled(InputBase)(({ theme }) => ({
 }));
+
 
 export default function SelectLabels() {
     const [title, setTitle] = useState('');
@@ -107,17 +109,15 @@ export default function SelectLabels() {
                     </IconButton>
                 </Paper>
 
-                <FormControl sx={{ marginLeft: '20px' }}>
+                <FormControl sx={{ marginLeft: '20px' }} >
                     <RadioGroup
                         aria-labelledby="demo-radio-buttons-group-label"
                         value={selectedType}
                         onChange={(event) => setSelectedType(event.target.value)}
-                        style={{
-                            color: '#001D58',
-                            fontWeight: 'bolder',
-                        }}>
-                        <FormControlLabel value="sale" control={<Radio />} label="For sale" />
-                        <FormControlLabel value="rent" control={<Radio />} label="For rent" />
+                        style={{ color: 'red' }}
+                        >
+                        <FormControlLabel  value="sale" color='black' control={<Radio />} label="For sale" />
+                        <FormControlLabel value="rent" control={<Radio style={{color:'black'}}/>} label="For rent" style={{color:'#000'}}/>
                     </RadioGroup>
                 </FormControl>
 
@@ -181,7 +181,9 @@ export default function SelectLabels() {
             <div>
                 <CardContainer houses={filteredHouses} />
             </div>
+            <Footer />
         </div>
+        
     );
 }
 

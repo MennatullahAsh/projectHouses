@@ -8,6 +8,10 @@
     background-color: white;
     color: black;
 }
-.btn1{
-    background-color: black;
-}
+.btn{
+color: black;
+        font-size: 18px ;
+        font-weight: bold ;
+        margin-left: '20px';
+        text-decoration: 'none',
+    }

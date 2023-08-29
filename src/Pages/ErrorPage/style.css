@@ -1,0 +1,28 @@
+.container {
+    position: relative;
+    text-align: center;
+    height: 100vh;
+}
+
+.overlay {
+    text-align: center;
+    color: #001D58;
+}
+.overlay h1{
+    color: #EE8400;
+    letter-spacing: 20px;
+    font-size: 200px;
+    font-weight: 900;
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+
+span {
+    color: #EE8400;
+    font-weight: bolder;
+}
+
+.paragraph {
+    line-height: 10px;
+    color: #001D58;
+}

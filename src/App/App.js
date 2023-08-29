@@ -1,9 +1,9 @@
 import React from 'react';
-import { Layout, Landing, Details, SignIn ,SignUp} from '../Pages';
+import { Layout, Landing, Details, SignIn ,SignUp ,Favorites } from '../Pages';
 import { Route, Routes } from 'react-router-dom';
 import AboutUS from '../Pages/AboutUS';
 import SearchPage from '../Pages/SearchPage';
-// import SignIn from '../Pages/SignIn'
+import ErrorPage from '../Pages/ErrorPage';
 
 function App() {
   return (
@@ -16,6 +16,8 @@ function App() {
         <Route path="/SignIn" element={<SignIn/>} />
         <Route path="/SignUp" element={<SignUp/>} />
         <Route path="/Search" element={<SearchPage />} />
+        <Route path="/Favorites" element={<Favorites />} />
+        <Route path="*" element={<ErrorPage/>} />
 
       </Routes>
 

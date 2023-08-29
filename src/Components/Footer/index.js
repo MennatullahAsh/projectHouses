@@ -1,9 +1,6 @@
 import React from "react";
-import logo from '../Utilis/images/logo.png';
 import { Typography, Link, IconButton } from '@mui/material';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import InstagramIcon from '@mui/icons-material/Instagram';
+
 
 import './style.css'
 

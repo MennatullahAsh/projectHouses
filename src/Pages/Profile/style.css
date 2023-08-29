@@ -1,0 +1,160 @@
+.all {
+    background-color: #001D58;
+}
+
+.tap {
+    background-color: rgba(0, 29, 88, 0.11);
+}
+
+.tabs {
+    color: #EE8400;
+    font-weight: 900;
+}
+
+.user {
+    width: 60px;
+    margin-bottom: 90px;
+    margin-left: 40px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid #001D58;
+    width: 600px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.user-details {
+    margin-left: 50px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1px;
+}
+
+.user-info span {
+    font-weight: bolder;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.userTable {
+    border-collapse: collapse;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.userTable td {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.userTable td span {
+    font-weight: bold;
+}
+
+.userTable tr:last-child td {
+    border-bottom: none;
+    color: black;
+}
+
+
+/* //////////////////////////////////////////// */
+
+.houses-container {
+    width: 800px;
+    margin-top: 1620px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.house  {
+    width: 80px;
+    height: 70px;
+    /* margin-bottom: 90px; */
+    margin-left: 500px;
+}
+
+
+.house-card {
+    width: 80%;
+    border: 1px solid #001D58;
+    padding: 20px;
+    margin: 10px 0 ;
+    border-radius: 2px;
+    box-sizing: border-box;
+  
+}
+
+.house-card:hover {
+    transform: translateY(-0.5px);
+}
+
+
+.house-card span {
+    padding-right: 20px;
+}
+
+
+.house-card .tableHouse td {
+    line-height: 25px;
+}
+.house-card .tableHouse td .p{
+    font-size: 14px;
+    padding-right: 50px;
+    line-height: 500px;
+}
+
+.house-card span {
+    font-weight: bold;
+}
+.tableHouse{
+    padding-left: 5px;
+margin-top: -47px  ;
+}
+
+
+/* //////////////////////////////////// */
+
+.form-container {
+    width: 800px;
+    margin: 280px 190px  0 auto;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.form-button {
+    background-color: #001D58;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.room{
+    display: flex;
+    gap: 40px;
+    width: 450px;
+}

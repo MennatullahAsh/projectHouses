@@ -62,7 +62,7 @@ function HouseInfo() {
     return (
         <div className="houses-container">
             {housesData.map((house, index) => (
-                <div key={index} className="house-card">
+                <div key={index} className="houseCard">
                     <div className="house-content">
                         <div className="house-info">
                         <img src={house.url} alt="house" className='house' />

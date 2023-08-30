@@ -1,12 +1,10 @@
 import React from 'react';
 import { Container, Typography } from '@mui/material';
 import './style.css'; 
-// import { FaChessKing } from 'react-icons/fa';
 
 const ErrorPage = () => {
     return (
         <Container className="container">
-            {/* <FaChessKing className="icon" /> */}
             <div className="overlay">
                  <Typography variant="h4" gutterBottom>
                     <h1>404</h1>

@@ -12,7 +12,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import img from "../../Components/Utilis/images/About.png"
-
+import Footer from '../../Components/Footer';
 function Details() {
     const { id } = useParams();
     const [house, setHouse] = useState({});
@@ -34,137 +34,124 @@ function Details() {
     }, [id]);
 
     return (
-        <Container maxWidth="lg" style={{
-            marginTop: '50px',
-        }}>
-            <Grid container>
-                <Grid item xs={12} sm={12} md={6} lg={6} >
-                    <img src={house.url} alt="House"
-                        style={{
-                            width: '500px',
-                            height: '400px'
-                        }} />
-
-                    <div style={{ display: 'flex', justifyContent: 'space-around', marginRight: '70px' }}>
-                        <img src={img}
-                            alt="House"
+        <div>
+            <Container maxWidth="lg" style={{
+                marginTop: '50px',
+            }}>
+                <Grid container>
+                    <Grid item xs={12} sm={12} md={6} lg={6} >
+                        <img src={house.url} alt="House"
                             style={{
-                                width: '150px',
-                                height: '150px'
+                                width: '500px',
+                                height: '400px'
                             }} />
-                        <img src={img}
-                            alt="House"
+
+                        <div style={{ display: 'flex', justifyContent: 'space-around', marginRight: '70px' }}>
+                            <img src={img}
+                                alt="House"
+                                style={{
+                                    width: '150px',
+                                    height: '150px'
+                                }} />
+                            <img src={img}
+                                alt="House"
+                                style={{
+                                    width: '150px',
+                                    height: '150px'
+                                }} />
+                            <img src={img}
+                                alt="House"
+                                style={{
+                                    width: '150px',
+                                    height: '150px'
+                                }} />
+                        </div>
+                    </Grid>
+
+
+                    <Grid item xs={12} sm={12} md={6} lg={6}>
+                        <Typography variant="h4" className="title"
                             style={{
-                                width: '150px',
-                                height: '150px'
-                            }} />
-                        <img src={img}
-                            alt="House"
-                            style={{
-                                width: '150px',
-                                height: '150px'
-                            }} />
-
-                    </div>
-
-                </Grid>
-
-
-                <Grid item xs={12} sm={12} md={6} lg={6}>
-                    <Typography variant="h4" className="title"
-                        style={{
-                            color: '#001D58',
-                            fontWeight: 'bold',
-                            letterSpacing: '1.5px'
-                        }}>
-                        {house.title}
-                    </Typography>
-
-                    <div className="room" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-                        <Typography variant="subtitle1" style={{ marginRight: '10px' }}>
-                            <LocalHotelIcon style={{
-                                fontSize: '28px',
-                                padding: "10px 12px 0px 11px",
-                            }} />
-                            <span style={{
-                                fontSize: '22px',
-                                marginTop: '-20px',
-                            }}>{house.bedroom}</span>
-
-                        </Typography>
-
-                        <Typography variant="subtitle1" style={{ marginRight: '10px' }}>
-                            <BathtubIcon style={{
-                                fontSize: '25px',
-                                padding: "10px 10px 0px 11px",
-                            }} />
-                            <span style={{
-                                fontSize: '22px',
-                                marginTop: '-20px',
-                            }}> {house.bathroom}</span>
-
-
-                        </Typography>
-                        <Typography variant="subtitle1" >
-                            <AttachMoneyIcon style={{
-                                fontSize: '25px',
-                                padding: "12px 2px 0px 290px",
+                                color: '#001D58',
                                 fontWeight: 'bold',
-                                fontSize: '30px',
-                                color: 'red'
-                            }} />
+                                letterSpacing: '1.5px',
+                                paddingBottom: '30px',
+                            }}>
+                            {house.title}
+                        </Typography>
+
+                        <div className="room" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                            <div style={{ display: 'flex', alignItems: 'center' }}>
+                                <Typography variant="subtitle1" style={{ fontSize: '22px', marginRight: '10px' }}>
+                                    <span> {house.bedroom}</span>
+                                </Typography>
+                                <LocalHotelIcon style={{ fontSize: '28px', padding: '0px 12px 0px 11px' }} />
+                            </div>
+
+
+                            <div style={{ display: 'flex', alignItems: 'center' }}>
+                                <Typography variant="subtitle1" style={{ fontSize: '22px', marginRight: '10px' }}>
+                                    <span>{house.bathroom}</span>
+                                </Typography>
+                                <BathtubIcon style={{ fontSize: '25px', padding: '0px 12px 10px 11px' }} />
+                            </div>
+
+                            <div style={{ display: 'flex', alignItems: 'center', marginLeft: '230px' }}>
+                                <AttachMoneyIcon style={{ fontSize: '30px', color: 'red' }} />
+                                <Typography variant="subtitle1" style={{ fontSize: '22px', fontWeight: 'bold', color: 'red', marginLeft: '5px' }}>
+                                    {house.price}
+                                </Typography>
+                            </div>
+
+                        </div>
+
+
+                        <div className="description">
+                            <Typography variant="subtitle1" className="subtitle">
+                                {house.description}
+                            </Typography>
+                        </div>
+
+
+                        <div className='contact' style={{ display: 'flex', flexDirection: 'column' }}>
                             <span style={{
-                                fontSize: '22px',
-                                fontWeight: 'bold',
-                                color: 'red'
-                            }}> {house.price}</span>
+                                display: 'flex', alignItems: 'center', fontWeight: 'bold',
+                                color: '#000'
+                            }}>
+                                <PlaceIcon style={{
+                                    marginRight: '20px',
+                                    color: '#001D58',
+                                    fontSize: '30px',
+                                }} /> {house.address}
+                            </span>
 
+                            <span style={{
+                                display: 'flex', alignItems: 'center',
+                                color: '#000'
+                            }}>
+                                <PhoneIcon style={{
+                                    marginRight: '20px',
+                                    color: '#001D58',
+                                    fontSize: '30px',
+                                }} /> <p style={{ margin: '0' }}>059-11122112</p>
+                            </span>
 
-                        </Typography>
-                    </div>
-
-
-                    <div className="description">
-                        <Typography variant="subtitle1" className="subtitle">
-                            {house.description}
-                        </Typography>
-                    </div>
-
-
-                    <div className='contact' style={{ display: 'flex', flexDirection: 'column' }}>
-                        <span style={{
-                            display: 'flex', alignItems: 'center', fontWeight: 'bold'
-                        }}>
-                            <PlaceIcon style={{
-                                marginRight: '20px',
-                                color: '#001D58',
-                                fontSize: '30px',
-                            }} /> {house.address}
-                        </span>
-
-                        <span style={{ display: 'flex', alignItems: 'center' }}>
-                            <PhoneIcon style={{
-                                marginRight: '20px',
-                                color: '#001D58',
-                                fontSize: '30px',
-                            }} /> <p style={{ margin: '0' }}>059-11122112</p>
-                        </span>
-
-                        <span style={{ display: 'flex', alignItems: 'center' }}>
-                            <EmailIcon style={{
-                                marginRight: '21px',
-                                color: '#001D58',
-                                fontSize: '28px',
-                            }} /> <p style={{ margin: '0' }}>singleFam@gmail.com</p>
-                        </span>
-                    </div>
-
-
-
-
+                            <span style={{
+                                display: 'flex', alignItems: 'center',
+                                color: '#000'
+                            }}>
+                                <EmailIcon style={{
+                                    marginRight: '21px',
+                                    color: '#001D58',
+                                    fontSize: '28px',
+                                }} /> <p style={{ margin: '0' }}>singleFam@gmail.com</p>
+                            </span>
+                        </div>
+                    </Grid>
                 </Grid>
-            </Grid>
-        </Container>
+            </Container>
+            <Footer />
+        </div>
     );
 }
 

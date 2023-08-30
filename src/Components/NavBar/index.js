@@ -46,7 +46,6 @@ function ResponsiveAppBar() {
                     />
 
                     <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center', fontSize: '360' }}>
-
                         <Button className='btn' > <Link to='/' style={{
                             color: 'black',
                             fontSize: '18px',
@@ -62,15 +61,6 @@ function ResponsiveAppBar() {
                             marginLeft: '20px',
                             textDecoration: 'none',
                         }} >About Us</Link></Button>
-
-                        <Button> <Link to='/Favorites' style={{
-                            color: 'black',
-                            fontSize: '18px',
-                            fontWeight: 'bold',
-                            marginLeft: '20px',
-                            textDecoration: 'none',
-                        }} >My Favorites</Link></Button>
-
                     </Box>
 
 
@@ -82,21 +72,26 @@ function ResponsiveAppBar() {
                                 marginRight: '20px',
                                 width: '90px',
                                 fontWeight: 'bold',
-                            }} >  Sign In</Link></Button>
+                                borderRadius:'3px',
+                                textDecoration:'none',
+                                color:'#fff',
+                                padding:'4px 5px'
+                            }} >  Login</Link></Button>
 
-                        <Button variant="contained">
+                        <Button className='btn1'>
                             <Link to='/SignUp' style={{
-                                border: '1px solid #EE8400 ',
-                                backgroundColor: '#fff',
+                                color: 'black',
+                                backgroundColor: '#001D58',
+                                marginRight: '20px',
                                 width: '90px',
                                 fontWeight: 'bold',
-                                color: 'black',
-                                marginRight: '40px'
-                            }}>  Sign Up</Link></Button>
-
+                                borderRadius:'3px',
+                                textDecoration:'none',
+                                color:'#fff',
+                                padding:'4px 5px'
+                            }} >  Sign Up</Link></Button>
                     
                     </Box>
-
                 </Toolbar>
             </Container>
         </AppBar>

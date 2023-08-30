@@ -13,7 +13,6 @@ import SearchIcon from '@mui/icons-material/Search';
 import Button from '@mui/material/Button';
 import CardContainer from "../../Components/CardContainer";
 import { TextField } from '@mui/material';
-import Footer from "../../Components/Footer"
 
 const BootstrapInput = styled(InputBase)(({ theme }) => ({
 }));
@@ -85,7 +84,8 @@ export default function SelectLabels() {
 
     return (
         <div style={{
-            marginBottom: ' 100px ',
+            marginTop: ' 50px ',
+            marginBottom:'300px'
         }}>
             <div style={{
                 width: '70%',
@@ -98,8 +98,8 @@ export default function SelectLabels() {
                     <InputBase sx={{ ml: 5, flex: 1 }}
                         placeholder="Search .."
                         inputProps={{ 'aria-label': 'search google maps' }}
-                        value={location} // <-- Add value here
-                        onChange={(event) => setLocation(event.target.value)} // <-- Add onChange here
+                        value={location} 
+                        onChange={(event) => setLocation(event.target.value)}
                     />
                     <IconButton type="button" sx={{ p: '10px' }} aria-label="search" style={{
                         color: '#EE8400',
@@ -110,11 +110,11 @@ export default function SelectLabels() {
                 </Paper>
 
                 <FormControl sx={{ marginLeft: '20px' }} >
-                    <RadioGroup
+                    <RadioGroup 
                         aria-labelledby="demo-radio-buttons-group-label"
                         value={selectedType}
                         onChange={(event) => setSelectedType(event.target.value)}
-                        style={{ color: 'red' }}
+                        
                         >
                         <FormControlLabel  value="sale" color='black' control={<Radio />} label="For sale" />
                         <FormControlLabel value="rent" control={<Radio style={{color:'black'}}/>} label="For rent" style={{color:'#000'}}/>
@@ -123,7 +123,9 @@ export default function SelectLabels() {
 
             </div>
 
-            <div style={{ display: 'flex', justifyContent: 'center', gap: '50px' }}>
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '50px',
+            marginBottom:'50px'
+        }}>
 
                 <FormControl sx={{ m: 1, minWidth: 120 }}>
                     <TextField
@@ -166,14 +168,12 @@ export default function SelectLabels() {
                     variant="contained"
                     onClick={handleSearch}
                     style={{
-                        backgroundColor: '#EE8400',
+                        backgroundColor: '#001D58',
                         color: 'white',
                         height: '50px',
                         letterSpacing: '1px',
                         fontWeight: 'bolder',
-                    }}
-
-                >
+                    }}>
                     Search
                 </Button>
             </div>
@@ -181,7 +181,6 @@ export default function SelectLabels() {
             <div>
                 <CardContainer houses={filteredHouses} />
             </div>
-            <Footer />
         </div>
         
     );

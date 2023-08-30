@@ -65,7 +65,15 @@
     color: black;
 }
 
-
+.edit-button {
+    background-color: #1976D2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
 /* //////////////////////////////////////////// */
 
 .houses-container {

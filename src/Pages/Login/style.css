@@ -5,8 +5,6 @@
     background-color: #fff !important;
 }
 
-
-
 .login-image {
     width: 45vw;
     height: 100vh;
@@ -60,9 +58,7 @@ margin-left: 350px;
     transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #D37400;
-}
+
 
 
 @media (max-width: 768px) {

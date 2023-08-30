@@ -10,7 +10,6 @@ import style from "./style.css"
 import HouseInfo from "./houseInfo";
 import AddHouse from './AddHouse';
 import Favorites from './Favorites';
-import { margin } from '@mui/system';
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
 
@@ -86,7 +85,7 @@ export default function VerticalTabs() {
                 style={{
                     color: '#EE8400',
                     marginLeft: '100px',
-                    marginTop:'100px'
+                    marginTop: '100px'
                 }}
             >
                 <Tab className='tabs' label="Profile" {...a11yProps(0)} />

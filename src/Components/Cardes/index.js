@@ -9,7 +9,6 @@ import LocalHotelIcon from '@mui/icons-material/LocalHotel';
 import BathtubIcon from '@mui/icons-material/Bathtub';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import { Link } from 'react-router-dom';
-
 import style from './style.css'
 
 export default function HouseCard({ house, onToggleFavorite, isFavorite }) {
@@ -101,6 +100,8 @@ export default function HouseCard({ house, onToggleFavorite, isFavorite }) {
                         }}> More Details</Link>
                 </CardActions>
             </Card>
+          
         </div>
+        
     );
 }

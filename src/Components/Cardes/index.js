@@ -14,7 +14,7 @@ import style from './style.css'
 export default function HouseCard({ house, onToggleFavorite, isFavorite }) {
     const [liked, setLiked] = React.useState(false);
 
-    const { id, url, address, price, description, bedroom, bathroom, type } = house;
+    const { id, url, address, price, description, bedroom, bathroom, type, title } = house;
 
     const handleLikeToggle = () => {
         setLiked(!liked);
@@ -47,13 +47,9 @@ export default function HouseCard({ house, onToggleFavorite, isFavorite }) {
                             onClick={handleLikeToggle}
                         />
                     <CardContent>
-                        <Typography gutterBottom variant="p" component="div">
-                            {address}
+                        <Typography gutterBottom variant="p" component="div" style={{fontWeight:'bolder'}}>
+                            {title}
                         </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            {description.split("").splice(0, 115).join("")}
-                        </Typography>
-
                         <Typography className='icon'
                             style={{
                                 display: 'flex',
@@ -62,25 +58,33 @@ export default function HouseCard({ house, onToggleFavorite, isFavorite }) {
                             <LocalHotelIcon style={{
                                 padding: "3px 10px 0 0",
                                 fontSize: '28px',
+
                             }} />
                             {bedroom}
                             <BathtubIcon style={{
                                 padding: "0px 10px 0 11px",
+
                             }} />
 
-                            <span>{bathroom}</span>
+                            {bathroom}
                             <span style={{
                                 paddingLeft: '130px',
                                 fontWeight: 'bolder',
+                                color: '#EE8400',
                                 fontSize: '18px'
                             }}>{price}
                             </span>
                             <AttachMoneyIcon style={{
                                 padding: "0px 0px 0px 2px",
-                                color: 'red'
+
                             }} />
                         </Typography>
 
+                        <Typography variant="body2" color="text.secondary">
+                            {description.split("").splice(0, 115).join("")}
+                        </Typography>
+
+                      
                     </CardContent>
                 </CardActionArea>
                 <CardActions className='cardActions'>

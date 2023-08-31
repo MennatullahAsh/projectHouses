@@ -1,10 +1,12 @@
 import React from 'react';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 export default function Favorites({ favorites }) {
     return (
         <div>
-            <h2>Your Favorite Houses</h2>
-            {/* <table>
+            <FavoriteBorderIcon/>
+            <h2>My Favorites House</h2>
+            <table>
                 <thead>
                     <tr>
                         <th>Type</th>
@@ -21,7 +23,7 @@ export default function Favorites({ favorites }) {
                         </tr>
                     ))}
                 </tbody>
-            </table> */}
+            </table>
         </div>
     );
 }

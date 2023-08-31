@@ -14,8 +14,7 @@ import { Link as RouterLink } from 'react-router-dom';
 const defaultTheme = createTheme();
 
 const isValidFirstName = (firstName) => {
-    // قم بتنفيذ الفحص المناسب هنا
-    return firstName.trim() !== ''; // مثال بسيط: التحقق من وجود الاسم الأول
+    return firstName.trim() !== ''; 
 };
 
 export default function SignUp() {
@@ -46,12 +45,10 @@ export default function SignUp() {
             return;
         }
 
-        // إذا تم التحقق بنجاح
         setEmailError('');
         setFirstNameError('');
         setConfirmPasswordError('');
 
-        // تنفيذ باقي الخطوات
         console.log({
             firstName: firstName,
             email: email,

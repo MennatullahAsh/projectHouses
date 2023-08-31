@@ -8,7 +8,7 @@ const ErrorPage = () => {
             <div className="overlay">
                  <Typography variant="h4" gutterBottom>
                     <h1>404</h1>
-                    <span>Oops!</span> Page not found
+                    <span style={{ color:'#EE8400'}}>Oops!</span> Page not found
                  </Typography>
                  <Typography variant="body1" paragraph className="paragraph">
                      The page you are looking for might have been removed or is temporarily unavailable.

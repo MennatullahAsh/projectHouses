@@ -83,9 +83,9 @@ function Details() {
                         <div className="room" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                             <div style={{ display: 'flex', alignItems: 'center' }}>
                                 <Typography variant="subtitle1" style={{ fontSize: '22px', marginRight: '10px' }}>
-                                    <span> {house.bedroom}</span>
+                                    <span > {house.bedroom}</span>
                                 </Typography>
-                                <LocalHotelIcon style={{ fontSize: '28px', padding: '0px 12px 0px 11px' }} />
+                                <LocalHotelIcon style={{ fontSize: '28px', padding: '0px 12px 0px 11px', color: '#EE8400', }} />
                             </div>
 
 
@@ -93,7 +93,7 @@ function Details() {
                                 <Typography variant="subtitle1" style={{ fontSize: '22px', marginRight: '10px' }}>
                                     <span>{house.bathroom}</span>
                                 </Typography>
-                                <BathtubIcon style={{ fontSize: '25px', padding: '0px 12px 10px 11px' }} />
+                                <BathtubIcon style={{ fontSize: '25px', padding: '0px 12px 10px 11px', color: '#EE8400', }} />
                             </div>
 
                             <div style={{ display: 'flex', alignItems: 'center', marginLeft: '230px' }}>

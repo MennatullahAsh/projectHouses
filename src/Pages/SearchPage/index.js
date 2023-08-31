@@ -85,7 +85,7 @@ export default function SelectLabels() {
     return (
         <div style={{
             marginTop: ' 50px ',
-            marginBottom:'300px'
+            marginBottom: '300px'
         }}>
             <div style={{
                 width: '70%',
@@ -98,7 +98,7 @@ export default function SelectLabels() {
                     <InputBase sx={{ ml: 5, flex: 1 }}
                         placeholder="Search .."
                         inputProps={{ 'aria-label': 'search google maps' }}
-                        value={location} 
+                        value={location}
                         onChange={(event) => setLocation(event.target.value)}
                     />
                     <IconButton type="button" sx={{ p: '10px' }} aria-label="search" style={{
@@ -110,22 +110,23 @@ export default function SelectLabels() {
                 </Paper>
 
                 <FormControl sx={{ marginLeft: '20px' }} >
-                    <RadioGroup 
+                    <RadioGroup
                         aria-labelledby="demo-radio-buttons-group-label"
                         value={selectedType}
                         onChange={(event) => setSelectedType(event.target.value)}
-                        
-                        >
-                        <FormControlLabel  value="sale" color='black' control={<Radio />} label="For sale" />
-                        <FormControlLabel value="rent" control={<Radio style={{color:'black'}}/>} label="For rent" style={{color:'#000'}}/>
+
+                    >
+                        <FormControlLabel value="sale" control={<Radio />} label="For sale" style={{ color: '#001D58', fontWeight: 'bolder' }} />
+                        <FormControlLabel value="rent" control={<Radio />} label="For rent" style={{ color: '#001D58', fontWeight: 'bolder' }} />
                     </RadioGroup>
                 </FormControl>
 
             </div>
 
-            <div style={{ display: 'flex', justifyContent: 'center', gap: '50px',
-            marginBottom:'50px'
-        }}>
+            <div style={{
+                display: 'flex', justifyContent: 'center', gap: '50px',
+                marginBottom: '50px'
+            }}>
 
                 <FormControl sx={{ m: 1, minWidth: 120 }}>
                     <TextField
@@ -173,6 +174,7 @@ export default function SelectLabels() {
                         height: '50px',
                         letterSpacing: '1px',
                         fontWeight: 'bolder',
+                        marginTop: '10px'
                     }}>
                     Search
                 </Button>
@@ -182,7 +184,7 @@ export default function SelectLabels() {
                 <CardContainer houses={filteredHouses} />
             </div>
         </div>
-        
+
     );
 }
 

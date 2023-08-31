@@ -3,11 +3,13 @@
     align-items: center;
     justify-content: center;
     background-color: #fff !important;
+    font-family: 'Istok web';
 }
 
 .login-image {
     width: 45vw;
     height: 100vh;
+    margin-top: -60px;
 }
 
 .login-form-container {
@@ -22,6 +24,7 @@
     font-size: 40px;
     color: #001D58;
     margin-top: -70px;
+    margin-left: 5px;
 }
 
 .form-group {
@@ -47,13 +50,17 @@
     margin-top: 8px;
 }
 
-button {
+.button {
     background-color: #EE8400;
     color: white;
+    font-size: 17px;
+    font-weight: 700;
     border: none;
-    padding: 10px 20px;
+    width: 105%;
+    padding: 10px 0px;
+    margin-top: 15px;
     border-radius: 5px;
-margin-left: 350px;
+    text-align: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
